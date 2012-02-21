@@ -43,6 +43,10 @@ header{
     margin:50px 10px 0 0;
 }
 
+#threads {
+  margin: 0 0 20px;
+}
+
 .tonkatsu{
     margin: 0 0 30px;
 }
