@@ -2,8 +2,8 @@ set :application, "ton.katsuma.tv"
 set :user, "katsumatv"
 
 set :cache_dir, "~/var/cache/ton.katsuma.tv"
-set :source_dir = "public/"
-set :target_dir = "www/ton/"
+set :source_dir, "public/"
+set :target_dir, "www/ton/"
 
 
 role :web, "katsuma.tv"
