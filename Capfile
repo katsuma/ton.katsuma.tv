@@ -1,14 +1,4 @@
-set :application, "ton.katsuma.tv"
-set :user, "katsumatv"
+load 'deploy'
 
-role :www, "katsuma.tv"
-
-desc "deploy www files"
-task :deploy, :roles => [:www] do
-  source = "public/"
-  target = "www/ton/"
-
-  find_servers_for_task(current_task).each do |server|
-    `rsync -avz #{source} #{user}@#{server.host}:#{target}`
-  end
-end
+Dir['vendor/gems/*/recipes/*.rb','vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }
+load 'config/deploy' # remove this line to skip loading any of the default tasks
