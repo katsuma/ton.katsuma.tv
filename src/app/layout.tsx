@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-const siteName = "TON.KATSUma.tv";
+const siteName = "TON.KATSUma.TV";
 const siteDescription = "本当に有益なとんかつ情報サイトです";
 
 export const metadata: Metadata = {
