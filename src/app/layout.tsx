@@ -3,10 +3,32 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const siteName = "TON.KATSUma.tv";
+const siteDescription = "本当に有益なとんかつ情報サイトです";
 
 export const metadata: Metadata = {
-  title: "TON.KATSUma.tv",
-  description: "本当に有益なとんかつ情報サイトです",
+  title: siteName,
+  description: siteDescription,
+  openGraph: {
+    title: {
+      default: siteName,
+      template: `%s - ${siteName}`,
+    },
+    description: siteDescription,
+    url: '/',
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: {
+      default: siteName,
+      template: `%s - ${siteName}`,
+    },
+    description: siteDescription,
+    site: '@ryo_katsuma',
+    creator: '@ryo_katsuma',
+  },
 };
 
 export default function RootLayout({
