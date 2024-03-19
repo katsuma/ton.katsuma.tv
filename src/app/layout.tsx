@@ -7,6 +7,7 @@ const siteName = "TON.KATSUma.tv";
 const siteDescription = "本当に有益なとんかつ情報サイトです";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ton.katsuma.tv'),
   title: siteName,
   description: siteDescription,
   openGraph: {
