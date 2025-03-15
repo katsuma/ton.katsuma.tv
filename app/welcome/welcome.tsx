@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-export default function Home() {
+export function Welcome() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-12">
       <div className="mb-12 grid text-center lg:max-w-5xl lg:w-full lg:grid-cols-4 lg:text-left">
@@ -12,7 +10,7 @@ export default function Home() {
         <h2 className={`text-2xl font-bold`}>Tonta is the best.</h2>
         <p>
           <a href="https://r.tabelog.com/tokyo/A1305/A130503/13003984/" title="旨いとんかつ とん太">
-              <Image src={`/tonta.jpg`} width={450} height={600} priority={true} alt="旨いとんかつ とん太"/>
+              <img src={`/tonta.jpg`} width={450} height={600} alt="旨いとんかつ とん太"/>
           </a>
         </p>
       </section>
@@ -21,7 +19,7 @@ export default function Home() {
         <h3 className={`text-xl font-bold`}>Narikura is so good.</h3>
         <p>
           <a href="https://tabelog.com/tokyo/A1319/A131905/13236380/" title="とんかつ 成蔵">
-            <Image src={`/narikura.jpg`} width={360} height={271} priority={false} alt="とんかつ 成蔵" />
+            <img src={`/narikura.jpg`} width={360} height={271} alt="とんかつ 成蔵" />
           </a>
         </p>
       </section>
@@ -30,7 +28,7 @@ export default function Home() {
         <h3 className={`text-xl font-bold`}>Tonki is good.</h3>
         <p>
           <a href="https://tabelog.com/tokyo/A1319/A131905/13236380/" title="とんかつ とんき">
-            <Image src={`/tonki.jpg`} width={240} height={180} priority={false} alt="とんかつ とんき" />
+            <img src={`/tonki.jpg`} width={240} height={180} alt="とんかつ とんき" />
           </a>
         </p>
       </section>
